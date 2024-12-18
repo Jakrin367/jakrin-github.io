@@ -3,15 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me - Jakrin Khami</title>
+    <style>
+        /* Reset default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffedbc;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ff5733;
+        }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 20px 30px;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        /* Image styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffedbc;
+            margin: 20px auto;
+        }
+
+        /* Headings styling */
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            color: #ffedbc;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ffddc1;
+        }
+
+        /* Profile details */
+        .profile-details {
+            text-align: left;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .profile-details p {
+            margin: 10px 0;
+        }
+
+        .profile-details span {
+            font-weight: bold;
+            color: #ffedbc;
+        }
+
+        /* Button styling */
+        .button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff5733;
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #c70039;
+        }
+    </style>
 </head>
 <body>
-    <h1># jakrin-github.io</h1>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Portfolio</h1>
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-        <h3># MR.Jakrin Khami</h3>
-        <h3># MR.Oat</h3>
-        <h3># number 34.</h3>
-        <h3># IT.5101</h3>
-        <h3># ID Students 66309010068</h3>
+    <!-- Main Content -->
+    <div class="container" id="about">
+        <img src="C:\jakrin-github.io\mg\1.png" alt="Profile Picture" class="profile-img">
+        <h1>About Me</h1>
+        <h2>Jakrin Khami</h2>
+        <div class="profile-details">
+            <p><span>Nickname:</span> Oat</p>
+            <p><span>Student Number:</span> 34</p>
+            <p><span>Class:</span> IT.5101</p>
+            <p><span>Student ID:</span> 66309010068</p>
+        </div>
+        <a href="#contact" class="button">Contact Me</a>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container" id="education">
+        <h1>Education</h1>
+        <div class="profile-details">
+            <p><span>Primary School:</span> โรงเรียนวัดแม่แก้ดน้อย</p>
+            <p><span>High School:</span> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+            <p><span>University:</span> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container" id="contact">
+        <h1>Contact Me</h1>
+        <p>Email: nxydek28@example.com</p>
+        <p>Phone: 063-830-5360</p>
+    </div>
 </body>
 </html>
