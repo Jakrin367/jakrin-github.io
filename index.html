@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jakrin Khami</title>
+    <style>
+        /* Reset default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #121212, #3a3a3a, #f5a623);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar h1 {
+            font-size: 2rem;
+            color: #f5a623;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #f5a623;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            margin: 50px auto;
+            padding: 30px 50px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid #f5a623;
+            margin: 20px auto;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(255, 165, 0, 0.5);
+        }
+
+        /* Headings Styling */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f5a623;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #ffcc00;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Profile Details */
+        .profile-details {
+            text-align: left;
+            font-size: 1.2rem;
+            color: #eeeeee;
+            margin: 20px 0;
+        }
+
+        .profile-details p {
+            margin: 10px 0;
+        }
+
+        .profile-details span {
+            font-weight: bold;
+            color: #f5a623;
+        }
+
+        /* Buttons */
+        .button {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #f5a623, #ffcc00);
+            color: #121212;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 165, 0, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #f5a623;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .profile-details {
+                font-size: 1rem;
+            }
+
+            .button {
+                padding: 10px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Portfolio</h1>
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="about">
+        <img src="mg/1.png" alt="Profile Picture" class="profile-img">
+        <h1>About Me</h1>
+        <h2>Jakrin Khami</h2>
+        <div class="profile-details">
+            <p><span>Nickname:</span> Oat</p>
+            <p><span>Student Number:</span> 34</p>
+            <p><span>Class:</span> IT.5101</p>
+            <p><span>Student ID:</span> 66309010068</p>
+        </div>
+        <a href="#contact" class="button">Contact Me</a>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container" id="education">
+        <h1>Education</h1>
+        <div class="profile-details">
+            <p><span>Primary School:</span> โรงเรียนวัดแม่แก้ดน้อย</p>
+            <p><span>High School:</span> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+            <p><span>University:</span> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact Me: nxydek28@example.com | Phone: 063-830-5360</p>
+    </footer>
+</body>
+</html>
